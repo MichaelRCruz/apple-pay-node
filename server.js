@@ -14,23 +14,23 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/payments', (req, res) => {
-  console.log('Hello, payments.');
+  res.send('Hello, payments.');
 });
 
 app.get('/payments/:id', (req, res) => {
-  console.log('Hello, payment.');
+  res.send('Hello, payments.');
 });
 
 app.post('/payments', (req, res) => {
-  console.log('Hello, payment post.');
+  res.send('Hello, payment post.');
 });
 
 app.put('/payments/:id', (req, res) => {
-  console.log('Hello, paymemnts put.');
+  res.send('Hello, paymemnts put.');
 });
 
 app.delete('/payments/:id', (req, res) => {
-  console.log('Goodbye, payment.');
+  res.send('Goodbye, payment.');
 });
 
 app.use('*', function (req, res) {

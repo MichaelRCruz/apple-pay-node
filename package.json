@@ -1,0 +1,31 @@
+{
+  "name": "apple-pay-node",
+  "version": "1.0.0",
+  "description": "payment gateway",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelRCruz/apple-pay-node.git"
+  },
+  "keywords": [
+    "apple",
+    "pay",
+    "node",
+    "payment",
+    "gateway"
+  ],
+  "author": "michael@michaelcruz.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelRCruz/apple-pay-node/issues"
+  },
+  "homepage": "https://github.com/MichaelRCruz/apple-pay-node#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.9"
+  }
+}

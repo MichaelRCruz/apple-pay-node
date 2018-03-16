@@ -4,33 +4,48 @@ const bodyParser = require('body-parser');
 const express = require('express');
 // const mongoose = require('mongoose');
 
+// const SquareConnect = require('square-connect');
+// const defaultClient = SquareConnect.ApiClient.instance;
+//
+// const oauth2 = defaultClient.authentications['oauth2'];
+// oauth2.accessToken = process.env.SQUARETOKEN;
+// console.log('wjknevlcnwkenm', process.env);
+
+// const squareApi = new SquareConnect.LocationsApi();
+//
+// squareApi.listLocations().then(function(data) {
+//   console.log('API called successfully. Returned data: ' + data);
+// }, function(error) {
+//   console.error(error);
+// });
+
 // mongoose.Promise = global.Promise;
 
 // const { PORT, DATABASE_URL } = require('./config');
 const { PORT } = require('./config');
-const { Payment } = require('./models');
+const { Post } = require('./models');
 
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/payments', (req, res) => {
-  res.send('Hello, payments.');
+app.get('/post', (req, res) => {
+  res.send('Hello, post.');
 });
 
-app.get('/payments/:id', (req, res) => {
-  res.send('Hello, payments.');
+app.get('/posts/:id', (req, res) => {
+  res.send('Hello, post.');
 });
 
-app.post('/payments', (req, res) => {
-  res.send('Hello, payment post.');
+app.post('/posts', (req, res) => {
+  res.send('Hello, post.');
 });
 
-app.put('/payments/:id', (req, res) => {
-  res.send('Hello, paymemnts put.');
+app.put('/posts/:id', (req, res) => {
+  res.send('Hello, posts put.');
 });
 
-app.delete('/payments/:id', (req, res) => {
-  res.send('Goodbye, payment.');
+app.delete('/posts/:id', (req, res) => {
+  res.send('Goodbye, post.');
 });
 
 app.use('*', function (req, res) {

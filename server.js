@@ -6,18 +6,6 @@ const express = require('express');
 
 // const SquareConnect = require('square-connect');
 // const defaultClient = SquareConnect.ApiClient.instance;
-//
-// const oauth2 = defaultClient.authentications['oauth2'];
-// oauth2.accessToken = process.env.SQUARETOKEN;
-// console.log('wjknevlcnwkenm', process.env);
-
-// const squareApi = new SquareConnect.LocationsApi();
-//
-// squareApi.listLocations().then(function(data) {
-//   console.log('API called successfully. Returned data: ' + data);
-// }, function(error) {
-//   console.error(error);
-// });
 
 // mongoose.Promise = global.Promise;
 

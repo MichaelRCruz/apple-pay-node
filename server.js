@@ -2,10 +2,7 @@
 
 const bodyParser = require('body-parser');
 const express = require('express');
-// const mongoose = require('mongoose');
-
-// const SquareConnect = require('square-connect');
-// const defaultClient = SquareConnect.ApiClient.instance;
+// const mongoose = require('mongoose');å
 
 // mongoose.Promise = global.Promise;
 

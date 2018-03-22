@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const passport = require('passport');
 
-const { router: logsRouter } = require('./logs');
+const { router: docLogsRouter } = require('./doc-logs');
 const { router: usersRouter } = require('./users');
 const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
 
@@ -32,7 +32,7 @@ app.use(function (req, res, next) {
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
-app.use('/api/logs/', logsRouter);
+app.use('/api/doclogs/', docLogsRouter);
 app.use('/api/users/', usersRouter);
 app.use('/api/auth/', authRouter);
 

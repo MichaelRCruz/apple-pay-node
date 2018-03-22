@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-const LogSchema = mongoose.Schema({
+const DocLogSchema = mongoose.Schema({
   username: {
     type: String,
     required: true,
@@ -17,7 +17,7 @@ const LogSchema = mongoose.Schema({
   lastName: {type: String, default: ''}
 });
 
-LogSchema.methods.serialize = function() {
+DocLogSchema.methods.serialize = function() {
   return {
     username: this.username || '',
     firstName: this.firstName || '',
@@ -25,6 +25,6 @@ LogSchema.methods.serialize = function() {
   };
 };
 
-const Log = mongoose.model('Log', LogSchema);
+const DocLog = mongoose.model('DocLog', DocLogSchema);
 
-module.exports = {Log};
+module.exports = {DocLog};

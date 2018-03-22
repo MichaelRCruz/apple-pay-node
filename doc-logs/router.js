@@ -16,8 +16,9 @@ const dummyLog = [
   },
   {
     component_type: 'my-code-snippet',
-    content: `function sup(){console.log('yo');
-    }`
+    content: `router.get('/', (req, res) => {
+    return res.json(dummyLog);
+});`
   },
   {
     component_type: 'my-text-blob',
@@ -38,7 +39,7 @@ const dummyLog = [
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const {Log} = require('./models');
+const {DocLog} = require('./models');
 
 const router = express.Router();
 

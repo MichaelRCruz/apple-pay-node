@@ -16,6 +16,7 @@ const dummyLog = [
   },
   {
     component_type: 'my-code-snippet',
+    language: 'javascript',
     content: `router.get('/', (req, res) => {
     return res.json(dummyLog);
 });`
@@ -47,7 +48,7 @@ const jsonParser = bodyParser.json();
 
 // Post to register a new log
 router.post('/', jsonParser, (req, res) => {
-  // yet to be determined
+  return res.json(req.body);
 });
 
 router.get('/', (req, res) => {

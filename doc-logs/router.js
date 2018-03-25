@@ -22,6 +22,21 @@ const dummyLog = [
 });`
   },
   {
+    component_type: 'my-code-snippet',
+    language: 'bash',
+    content: `npm i moment`
+  },
+  {
+    component_type: 'my-code-snippet',
+    language: 'python',
+    content: `def happyBirthdayEmily(): #program does nothing as written
+    print("Happy Birthday to you!")
+    print("Happy Birthday to you!")
+    print("Happy Birthday, dear Emily.")
+    print("Happy Birthday to you!");
+});`
+  },
+  {
     component_type: 'my-text-blob',
     subtitle: 'Let\'s Take a Look',
     content: "Lorem ipsum dolor amet dIY gluten-free hell of tumblr vaporware tilde XOXO photo booth mixtape quinoa VHS offal. Tattooed waistcoat helvetica literally hammock, deep v raw denim man braid tumblr. Jean shorts thundercats mlkshk, skateboard enamel pin cold-pressed man bun lomo locavore XOXO."

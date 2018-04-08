@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node_modules/nodemon/bin/nodemon.js server.js",
     "test": "mocha --exit"
   },
   "keywords": [],
@@ -27,6 +27,7 @@
     "chai": "^4.0.1",
     "chai-http": "^3.0.0",
     "faker": "^3.1.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nodemon": "^1.17.3"
   }
 }

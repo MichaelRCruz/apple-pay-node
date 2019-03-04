@@ -99,4 +99,9 @@ router.get('/', (req, res) => {
   return res.json(toHtml(dummyLog));
 });
 
+router.get('/test', (req, res) => {
+  console.log('html: ', toHtml(dummyLog));
+  return res.json('router.get test');
+});
+
 module.exports = {router};
